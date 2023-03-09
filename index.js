@@ -42,7 +42,7 @@
   })
   d.addEventListener('click', (e) => {
     if(!e.target.matches('.menu a')) return false;
-    $btnMenu.firstElementChild.remove('open');
+    $btnMenu.firstElementChild.classList.remove('open');
     $menu.classList.remove('is-active');
   })
 } )(document);
