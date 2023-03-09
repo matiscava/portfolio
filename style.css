@@ -538,6 +538,10 @@ progress::-moz-progress-bar{
   
 /*********************** Site Style ***********************/
 
+.about {
+  padding-top: 6rem;
+}
+
 .about > article {
   margin-top: 3rem;
 }
@@ -653,6 +657,7 @@ progress::-moz-progress-bar{
 }
 
 @media screen and (min-width: 768px) {
+
   .contact-cards{
     display: grid;
     grid-template-columns: repeat(2,48%);
@@ -681,6 +686,10 @@ progress::-moz-progress-bar{
 }
   
 @media screen and (min-width: 1024px) {
+  .about {
+    padding: 0;
+  }
+
   .about > div.container.full-lg-screen {
     display: grid;
     grid-template-columns: repeat(3,30%);
