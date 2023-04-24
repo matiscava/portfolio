@@ -684,6 +684,10 @@ progress::-moz-progress-bar{
     grid-column: span 2;
   }
 }
+
+.scroll-y-none {
+  overflow-y: hidden;
+}
   
 @media screen and (min-width: 1024px) {
   .about {

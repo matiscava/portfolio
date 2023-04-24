@@ -46,3 +46,23 @@
     $menu.classList.remove('is-active');
   })
 } )(document);
+
+/************** Work's Cards **************/
+
+( (d) => {
+  const $btnCards = d.querySelectorAll('.portfolio-card'),
+    $btnClose = d.querySelectorAll('.modal-close');
+  $btnCards.forEach($btn => {
+    $btn.addEventListener('click', ( e ) => {
+      console.log('click');
+      d.querySelector('body').classList.add('scroll-y-none');
+    })
+  })
+  $btnClose.forEach( $btn => {
+    $btn.addEventListener('click', (e) => {
+      d.querySelector('body').classList.remove('scroll-y-none');
+    })
+  })
+}
+
+)(document)
