@@ -266,6 +266,68 @@ small>a {
   pointer-events: auto;
 }
 
+/*********************** Cursos ***********************/
+
+#cursos {
+  padding-bottom: 4rem;
+}
+
+.container-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 0 .4rem var(--first-color),
+  0 15px 50px;
+  position: relative;
+}
+
+#slider{
+  display: flex;
+  flex-direction: row;
+  width: 600%;
+  height: 100%;
+  margin-left: -100%;
+}
+
+.slider-item {
+  width: 100%;
+}
+
+.slider-item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.slider-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-color-alpha);
+  color: var(--black-color);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 2.5rem;
+  transition: all 1.5ms;
+}
+.slider-btn--right {
+  right: 10px;
+}
+.slider-btn--left {
+  left: 10px;
+}
+
+.slider-btn:hover{
+  background-color: var(--first-color);
+}
+
 /*********************** Menu ***********************/
 
 .menu-btn {
@@ -365,7 +427,7 @@ small>a {
   height: 3rem;
 }
 
-.modal[id|="trabajo"]:target {
+#section-work.modal.visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -599,6 +661,10 @@ progress::-moz-progress-bar{
   text-decoration: none;
 }
 
+.mobile-mt-3 {
+  margin-top: 2rem;
+}
+
 .portfolio-card{
   position: relative;
   width: 100%;
@@ -714,6 +780,10 @@ progress::-moz-progress-bar{
     top: 0;
     padding: 0.5rem;
     height: calc(var(--header-height) - .5rem);
+  }
+
+  .mobile-mt-3 {
+    margin-top: 0;
   }
   
   .portfolio > .container {
