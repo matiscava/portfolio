@@ -227,6 +227,7 @@ small>a {
   border-bottom: thin solid var(--first-color);
 }
 .contact-form textarea{
+  border: none;
   border-bottom: thin solid var(--first-color);
   resize: none;
 }
@@ -273,12 +274,13 @@ small>a {
 }
 
 .container-slider {
-  width: 100%;
+  width: 90%;
   height: 100%;
   overflow: hidden;
   box-shadow: 0 0 0 .4rem var(--first-color),
   0 15px 50px;
   position: relative;
+  margin: 0 auto;
 }
 
 #slider{
@@ -286,7 +288,7 @@ small>a {
   flex-direction: row;
   width: 600%;
   height: 100%;
-  margin-left: -100%;
+  max-height: 70vh;
 }
 
 .slider-item {

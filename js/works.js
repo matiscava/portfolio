@@ -99,6 +99,18 @@ const works = [
       tecnologias: ["HTML", "JavaScript","CSS", "Bootstrap"],
       enlace: "https://97globalsales.com/"
     }
+  },
+  {
+    id: "trabajo-guardias",
+    img: "assets/images/Guardia.jpg",
+    title: "App Organizador de Guardias",
+    description: "Desarrollamos dentro de un equipo, una aplicación en <i>FLutter</i>, para organizar las guardias mensuales de residentes en un hospital.",
+    details: {
+      CTO:"Maximiliano Fernandez Wortman",
+      fecha: "10/07/2023",
+      tecnologias: ["Java", "Dart","Flutter", "Github"],
+      referencia: "https://www.linkedin.com/in/maximiliano-jose-fernandez-wortman-3495b380/"
+    }
   }
 ];
 
