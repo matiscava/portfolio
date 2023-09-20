@@ -14,7 +14,7 @@
 <body>
   <header class="header">
     <section class="container">
-      <div class="logo"><a href="#">Matiscava</a></div>
+      <div class="logo text-shadow"><a href="#">Matiscava</a></div>
       <button class="menu-btn">
         <div id="nav-icon">
           <span></span>
@@ -26,23 +26,23 @@
         </div>
       </button>
       <nav class="menu">
-        <a href="#acerca">Acerca</a>
-        <a href="#portafolio">Portfolio</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#contacto">Contactame</a>
+        <a href="#acerca" data-spy-scroll>Acerca</a>
+        <a href="#portafolio" data-spy-scroll>Portfolio</a>
+        <a href="#cursos" data-spy-scroll>Cursos</a>
+        <a href="#contacto" data-spy-scroll>Contactame</a>
       </nav>
     </section>
   </header>
-  <section id="acerca" class="about bg-black">
+  <section id="acerca" class="about bg-black" data-spy-scroll>
     <div class="container section full-lg-screen ">
       <article class="text-lg-right">
-        <aside class="text-center text-lg-right">
-          <h1>Matías Scavarelli</h1>
+        <aside class="text-center">
+          <h1 class="text-shadow">Matías Scavarelli</h1>
           <h5>Programador <i>Web</i> - Espacializado en <i>BackEnd</i></h5>
         </aside>
-        <p>Desde principios del 2021, tuve un reencuentro con la programación y a partir de ahí empecé a capacitarme, para poder hacer de ella una forma de vivir. Realicé cursos de Desarrollador <i>Web</i> en Coder House, Codo a Codo y Udemy.</p>
-        <p>En un principio solo realizaba los proyectos que se requerían en las cursadas pero poco a poco fui obteniendo clientes como <i>Freelance FullStack</i>, y de esa manera salí del sitio de confort, obteniendo nuevos desafios.</p>
-        <p>Actualmente me siento mas comodo del lado del <i>Backend</i>, pero no tengo inconvenientes en realizar trabajos como <i>FrontEnd</i>.</p>
+        <p class="text-justify">Desde principios del 2021, tuve un reencuentro con la programación y a partir de ahí empecé a capacitarme, para poder hacer de ella una forma de vivir. Realicé cursos de Desarrollador <i>Web</i> en Coder House, Codo a Codo y Udemy.</p>
+        <p class="text-justify">En un principio solo realizaba los proyectos que se requerían en las cursadas pero poco a poco fui obteniendo clientes como <i>Freelance FullStack</i>, y de esa manera salí del sitio de confort, obteniendo nuevos desafios.</p>
+        <p class="text-justify">Actualmente me siento mas comodo del lado del <i>Backend</i>, pero no tengo inconvenientes en realizar trabajos como <i>FrontEnd</i>.</p>
         <div class="text-center text-lg-center">
           <a href="assets/Matias Scavarelli - Desarrollador.pdf" class="btn" target="_blank" rel="noopener">DESCARGA MI CV</a>
         </div>
@@ -51,7 +51,7 @@
         <img class="gray-scale" src="assets/images/CVPerfil.jpg" alt="matiscava">
       </article>
       <article >
-        <h2 class="text-center text-lg-left">Mis Habilidades</h2>
+        <h2 class="text-center text-shadow">Mis Habilidades</h2>
         <div class="progress-container">
           <div class="progress">
             <p>
@@ -127,7 +127,7 @@
     </div>
     </article>
   </section>
-  <section id="portafolio" class="portfolio section">
+  <section id="portafolio" class="portfolio section" data-spy-scroll>
     <div class="container">
       <h2 class="section-title">Mis Trabajos</h2>
       <a data-href="trabajo-christian-covers" class="portfolio-card">
@@ -135,7 +135,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>Christian Cover's</h3>
-            <p>Durante 2021, en uno de mis primeros trabajos, un cliente que nos solicitó una campaña para cambiar el estilos de su cuneta de Shopify, y le realizamos un <i>Theme</i> particular, para satisfacer sus necesidades.</p>
+            <p class="text-justify">Durante 2021, en uno de mis primeros trabajos, un cliente que nos solicitó una campaña para cambiar el estilos de su cuneta de Shopify, y le realizamos un <i>Theme</i> particular, para satisfacer sus necesidades.</p>
           </div>
         </aside>
       </a>
@@ -144,7 +144,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>App Podrida con NodeJS</h3>
-            <p>En este caso, es un proyecto personal, que nació a través de la costumbre mensual de juntarnos con amigos a jugar a un juego de cartas, que requiere una hoja de papel para poder anotar. De esta manera se me ocurrió hacer una aplicación para poder anotar los puntos del juego sin la necesidad de tener una hoja.</p>
+            <p class="text-justify">En este caso, es un proyecto personal, que nació a través de la costumbre mensual de juntarnos con amigos a jugar a un juego de cartas, que requiere una hoja de papel para poder anotar. De esta manera se me ocurrió hacer una aplicación para poder anotar los puntos del juego sin la necesidad de tener una hoja.</p>
           </div>
         </aside>
       </a>
@@ -153,7 +153,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>Miquela Wood Design - Stock App</h3>
-            <p>Realizamos, a pedido del cliente, una aplicación <i>Web</i> para poder controlar el Stock de su fábrica de muebles. Donde se puede cargar ingresos, egresos, consultar el Stock, y tiene un sistema de lectura de Código de barras para identificar tipo de producto, que se puede usar con un Celular o una Cámara Web.</p>
+            <p class="text-justify">Realizamos, a pedido del cliente, una aplicación <i>Web</i> para poder controlar el Stock de su fábrica de muebles. Donde se puede cargar ingresos, egresos, consultar el Stock, y tiene un sistema de lectura de Código de barras para identificar tipo de producto, que se puede usar con un Celular o una Cámara Web.</p>
           </div>
         </aside>
       </a>
@@ -162,7 +162,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>App Administración Biblioteca</h3>
-            <p>Para terminar el curso de Spring Boots que realice en Codo a Codo, realicé una aplicación para poder administrar una biblioteca. Donde se cargan los socios, libros, autores, tickets de entrega, devoluciones.</p>
+            <p class="text-justify">Para terminar el curso de Spring Boots que realice en Codo a Codo, realicé una aplicación para poder administrar una biblioteca. Donde se cargan los socios, libros, autores, tickets de entrega, devoluciones.</p>
           </div>
         </aside>
       </a>
@@ -171,7 +171,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>TNM a Tutoring Company</h3>
-            <p>Desarrollamos la Web de TNM, una empresa que realiza tutorías académicas para alumnos de educación media y terciaria en EEUU. Para realizarla partimos de template y fuimos agregando la información y editando el aspecto para que se acomode al gusto del cliente.</p>
+            <p class="text-justify">Desarrollamos la Web de TNM, una empresa que realiza tutorías académicas para alumnos de educación media y terciaria en EEUU. Para realizarla partimos de template y fuimos agregando la información y editando el aspecto para que se acomode al gusto del cliente.</p>
           </div>
         </aside>
       </a>
@@ -189,7 +189,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>97 Global Sales Inc.</h3>
-            <p>Desarrollamos la Web de 97 Global Sales Inc. En un trabajo en conjunto con <b>Blue up</b> realizamos una SPA de la empresa.</p>
+            <p class="text-justify">Desarrollamos la Web de 97 Global Sales Inc. En un trabajo en conjunto con <b>Blue up</b> realizamos una SPA de la empresa.</p>
           </div>
         </aside>
       </a>      
@@ -198,7 +198,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>MB Ballons</h3>
-            <p>Desarrollamos una web desde cero en el plataforma de <i>Shopify</i>, partiendo de una tienda física realizamos la transición necesaria para tener su web dentro de la plataforma.</p>
+            <p class="text-justify">Desarrollamos una web desde cero en el plataforma de <i>Shopify</i>, partiendo de una tienda física realizamos la transición necesaria para tener su web dentro de la plataforma.</p>
           </div>
         </aside>
       </a>      
@@ -207,7 +207,7 @@
         <aside class="portfolio-card-info">
           <div>
             <h3>App Organizador de Guardias</h3>
-            <p>Desarrollamos dentro de un equipo, una aplicación en <i>FLutter</i>, para organizar las guardias mensuales de residentes en un hospital.</p>
+            <p class="text-justify">Desarrollamos dentro de un equipo, una aplicación en <i>FLutter</i>, para organizar las guardias mensuales de residentes en un hospital.</p>
           </div>
         </aside>
       </a>
@@ -222,13 +222,13 @@
         <img src="" alt="">
         <div class="portfolio-info">
           <h3></h3>
-          <p></p>
+          <p class="text-justify"></p>
           <aside class="portfolio-details"></aside>
         </div>
       </article>
     </div>
   </article>
-  <section id="cursos" class="cursos section full-lg-screen bg-black">
+  <section id="cursos" class="cursos section full-lg-screen bg-black" data-spy-scroll>
     <div class="container">
       <h2 class="section-title">Cursos</h2>
       <div class="container-slider">
@@ -263,7 +263,7 @@
       </div>
       </div>
   </section>
-  <section id="contacto" class="contact section full-lg-screen">
+  <section id="contacto" class="contact section full-lg-screen" data-spy-scroll>
     <div class="container">
       <h2 class="section-title">Contactame...</h2>
       <article class="contact-cards">

@@ -61,7 +61,9 @@ import works from "./js/works.js";
       let work = works.find( element => element.id == $btn.getAttribute('data-href'));
 
       // cargamos el DOM
-      setWorkModal($modal,work)
+      setTimeout(() => {
+        setWorkModal($modal,work)
+      }, 0);
       d.querySelector('body').classList.add('scroll-y-none');
     })
   })
@@ -74,6 +76,8 @@ import works from "./js/works.js";
 }
 
 )(document);
+
+/************** Slider **************/
 
 ( (d) => {
   const $slider = d.querySelector("#slider"),
@@ -131,3 +135,45 @@ import works from "./js/works.js";
 
 }
 )(document);
+
+/************** Work's Cards **************/
+
+((d) => {
+  const $sections = d.querySelectorAll('section[data-spy-scroll]');
+  let $activeLink = d.querySelector('a[data-spy-scroll][href="#acerca"]');
+  const windowWidth = window.innerWidth;
+
+  const cb = (entries) => {
+    entries.forEach( (enrty) => {
+      const id = enrty.target.getAttribute('id');
+      const $link = d.querySelector(`a[data-spy-scroll][href='#${id}']`);
+      if(enrty.isIntersecting){
+        if($activeLink){
+          $activeLink.classList.remove('active');
+        }
+        $link.classList.add('active');
+        $activeLink = $link;
+      } else {
+        $link.classList.remove('active');
+      }
+    });
+  }
+
+  let thresholdSize;
+
+  if(windowWidth < 992 && windowWidth > 767){
+
+    thresholdSize = [0.2, 0.75]
+
+  } else if( windowWidth < 767) {
+
+    thresholdSize = [0.10, 0.85]
+
+  } else {
+    thresholdSize = [0.25, 0.9]
+  }
+
+  const observer = new IntersectionObserver(cb, {threshold: thresholdSize})
+
+  $sections.forEach( $section => observer.observe($section));
+})(document);

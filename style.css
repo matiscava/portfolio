@@ -13,7 +13,7 @@
   --black-alpha-color: rgba(0,0,0,0.5);
   /* Fuente */
   --title-font: 'M PLUS 1 Code', sans-serif;
-  --font: 'Merriweather', serif;
+  --font: 'calibri', serif;
   /* Unidades de medida */
   --max-width: 1200px;
   --header-height: 4rem;
@@ -200,6 +200,10 @@ small>a {
   top: 17px;
 }
 
+#nav-icon:hover span {
+  background-color: var(--title-color);
+}
+
 /*********************** Contact Form ***********************/
 
 .contact-form {
@@ -363,8 +367,14 @@ small>a {
   text-align: center;
   text-decoration: none;
   color: var(--first-color);
+  text-shadow: 1px 1px 0px #798975;
 }
 
+.menu a.active {
+  color: var(--title-color);
+  text-shadow: 1px 1px 0px #bd3e77bd;
+
+}
 .menu a:hover{
   color: var(--black-color);
   background-color: var(--first-color);
@@ -579,6 +589,14 @@ progress::-moz-progress-bar{
 
 .text-center{
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0px #798975;
 }
 
 @media screen and (min-width:1024px) {
