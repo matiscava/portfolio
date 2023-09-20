@@ -371,10 +371,11 @@ small>a {
 }
 
 .menu a.active {
-  color: var(--title-color);
-  text-shadow: 1px 1px 0px #bd3e77bd;
-
+  color: var(--black-color);
+  background-color: #798975;
+  text-shadow: 1px 1px 0px #798975;
 }
+
 .menu a:hover{
   color: var(--black-color);
   background-color: var(--first-color);
@@ -384,7 +385,6 @@ small>a {
   .menu-btn {
     display: none;
   }
-
   .menu {
     position: static;
     width: auto;
@@ -397,6 +397,11 @@ small>a {
   }
   .menu a:last-child {
     padding-right: 0;
+  }
+  .menu a.active {
+    color: var(--title-color);
+    text-shadow: 1px 1px 0px #bd3e77bd;
+    background-color: transparent;
   }
   .menu a:hover{
     color: #4d693f;
