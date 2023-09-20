@@ -200,10 +200,6 @@ small>a {
   top: 17px;
 }
 
-#nav-icon:hover span {
-  background-color: var(--title-color);
-}
-
 /*********************** Contact Form ***********************/
 
 .contact-form {

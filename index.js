@@ -140,7 +140,6 @@ import works from "./js/works.js";
 
 ((d) => {
   const $sections = d.querySelectorAll('section[data-spy-scroll]');
-  let $activeLink = d.querySelector('a[data-spy-scroll][href="#acerca"]');
   const windowWidth = window.innerWidth;
 
   const cb = (entries) => {
@@ -148,11 +147,7 @@ import works from "./js/works.js";
       const id = enrty.target.getAttribute('id');
       const $link = d.querySelector(`a[data-spy-scroll][href='#${id}']`);
       if(enrty.isIntersecting){
-        if($activeLink){
-          $activeLink.classList.remove('active');
-        }
         $link.classList.add('active');
-        $activeLink = $link;
       } else {
         $link.classList.remove('active');
       }
@@ -163,14 +158,16 @@ import works from "./js/works.js";
 
   if(windowWidth < 992 && windowWidth > 767){
 
-    thresholdSize = [0.2, 0.75]
+    thresholdSize = [0.3, 0.75]
+    console.log("Media");
 
   } else if( windowWidth < 767) {
 
-    thresholdSize = [0.10, 0.85]
+    thresholdSize = [0.2, 0.80]
+    console.log("Chica");
 
   } else {
-    thresholdSize = [0.25, 0.9]
+    thresholdSize = [0.45, 0.7]
   }
 
   const observer = new IntersectionObserver(cb, {threshold: thresholdSize})
